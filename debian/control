@@ -1,0 +1,45 @@
+Source: python-dib-utils
+Section: python
+Priority: optional
+Maintainer: PKG OpenStack <openstack-devel@lists.alioth.debian.org>
+Uploaders: Thomas Goirand <zigo@debian.org>
+Build-Depends: debhelper (>= 9),
+               openstack-pkg-tools,
+               python-all (>= 2.6.6-3~),
+               python-pbr,
+               python-setuptools,
+               python3-all,
+               python3-pbr,
+               python3-setuptools
+Standards-Version: 3.9.5
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-dib-utils.git
+Vcs-Git: git://anonscm.debian.org/openstack/python-dib-utils.git
+Homepage: https://github.com/openstack/dib-utils
+
+Package: python-dib-utils
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Standalone tools related to diskimage-builder - Python 2.x
+ These tools were originally part of the diskimage-builder project, but they
+ have uses outside of that project as well. Because disk space is at a premium
+ in base cloud images, pulling in all of diskimage-builder and its dependencies
+ just to use something like dib-run-parts is not desirable. This project allows
+ consumers to use the tools while pulling in only one small package with few/no
+ additional dependencies.
+ .
+ This package contains the Python 2.x module.
+
+Package: python3-dib-utils
+Architecture: all
+Pre-Depends: dpkg (>= 1.15.6~)
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: Standalone tools related to diskimage-builder - Python 3.x
+ These tools were originally part of the diskimage-builder project, but they
+ have uses outside of that project as well. Because disk space is at a premium
+ in base cloud images, pulling in all of diskimage-builder and its dependencies
+ just to use something like dib-run-parts is not desirable. This project allows
+ consumers to use the tools while pulling in only one small package with few/no
+ additional dependencies.
+ .
+ This package contains the Python 3.x module.

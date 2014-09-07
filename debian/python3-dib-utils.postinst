@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ] ; then
+	update-alternatives --install /usr/bin/dib-run-parts dib-run-parts /usr/bin/python3-dib-run-parts 200
+fi
+
+#DEBHELPER#
+
+exit 0
+
