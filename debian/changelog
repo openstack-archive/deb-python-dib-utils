@@ -1,3 +1,9 @@
+python-dib-utils (0.0.6-2) UNRELEASED; urgency=medium
+
+  * Fixed upstream GIT url.
+
+ -- Ondřej Nový <novy@ondrej.org>  Mon, 08 Feb 2016 19:57:27 +0100
+
 python-dib-utils (0.0.6-1) unstable; urgency=medium
 
   * Initial release. (Closes: #760756)
